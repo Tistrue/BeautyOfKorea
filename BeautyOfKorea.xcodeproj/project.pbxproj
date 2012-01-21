@@ -1,0 +1,298 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD22301114CA44EF0013011A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD22301014CA44EF0013011A /* UIKit.framework */; };
+		CD22301314CA44EF0013011A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD22301214CA44EF0013011A /* Foundation.framework */; };
+		CD22301514CA44EF0013011A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD22301414CA44EF0013011A /* CoreGraphics.framework */; };
+		CD22301B14CA44EF0013011A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CD22301914CA44EF0013011A /* InfoPlist.strings */; };
+		CD22301D14CA44EF0013011A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD22301C14CA44EF0013011A /* main.m */; };
+		CD22302114CA44EF0013011A /* BoKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD22302014CA44EF0013011A /* BoKAppDelegate.m */; };
+		CD22302414CA44EF0013011A /* BoKMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD22302314CA44EF0013011A /* BoKMasterViewController.m */; };
+		CD22302714CA44EF0013011A /* BoKDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD22302614CA44EF0013011A /* BoKDetailViewController.m */; };
+		CD22302A14CA44EF0013011A /* BoKMasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD22302814CA44EF0013011A /* BoKMasterViewController.xib */; };
+		CD22302D14CA44EF0013011A /* BoKDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD22302B14CA44EF0013011A /* BoKDetailViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CD22300C14CA44EF0013011A /* BeautyOfKorea.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeautyOfKorea.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD22301014CA44EF0013011A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CD22301214CA44EF0013011A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CD22301414CA44EF0013011A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CD22301814CA44EF0013011A /* BeautyOfKorea-Info.plist */ = {isa = PBXFileReference; path = "BeautyOfKorea-Info.plist"; sourceTree = "<group>"; };
+		CD22301A14CA44EF0013011A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CD22301C14CA44EF0013011A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CD22301E14CA44EF0013011A /* BeautyOfKorea-Prefix.pch */ = {isa = PBXFileReference; path = "BeautyOfKorea-Prefix.pch"; sourceTree = "<group>"; };
+		CD22301F14CA44EF0013011A /* BoKAppDelegate.h */ = {isa = PBXFileReference; path = BoKAppDelegate.h; sourceTree = "<group>"; };
+		CD22302014CA44EF0013011A /* BoKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BoKAppDelegate.m; sourceTree = "<group>"; };
+		CD22302214CA44EF0013011A /* BoKMasterViewController.h */ = {isa = PBXFileReference; path = BoKMasterViewController.h; sourceTree = "<group>"; };
+		CD22302314CA44EF0013011A /* BoKMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BoKMasterViewController.m; sourceTree = "<group>"; };
+		CD22302514CA44EF0013011A /* BoKDetailViewController.h */ = {isa = PBXFileReference; path = BoKDetailViewController.h; sourceTree = "<group>"; };
+		CD22302614CA44EF0013011A /* BoKDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BoKDetailViewController.m; sourceTree = "<group>"; };
+		CD22302914CA44EF0013011A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/BoKMasterViewController.xib; sourceTree = "<group>"; };
+		CD22302C14CA44EF0013011A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/BoKDetailViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD22300914CA44EF0013011A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD22301114CA44EF0013011A /* UIKit.framework in Frameworks */,
+				CD22301314CA44EF0013011A /* Foundation.framework in Frameworks */,
+				CD22301514CA44EF0013011A /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD22300114CA44EF0013011A = {
+			isa = PBXGroup;
+			children = (
+				CD22301614CA44EF0013011A /* BeautyOfKorea */,
+				CD22300F14CA44EF0013011A /* Frameworks */,
+				CD22300D14CA44EF0013011A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD22300D14CA44EF0013011A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD22300C14CA44EF0013011A /* BeautyOfKorea.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD22300F14CA44EF0013011A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD22301014CA44EF0013011A /* UIKit.framework */,
+				CD22301214CA44EF0013011A /* Foundation.framework */,
+				CD22301414CA44EF0013011A /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD22301614CA44EF0013011A /* BeautyOfKorea */ = {
+			isa = PBXGroup;
+			children = (
+				CD22301F14CA44EF0013011A /* BoKAppDelegate.h */,
+				CD22302014CA44EF0013011A /* BoKAppDelegate.m */,
+				CD22302214CA44EF0013011A /* BoKMasterViewController.h */,
+				CD22302314CA44EF0013011A /* BoKMasterViewController.m */,
+				CD22302514CA44EF0013011A /* BoKDetailViewController.h */,
+				CD22302614CA44EF0013011A /* BoKDetailViewController.m */,
+				CD22302814CA44EF0013011A /* BoKMasterViewController.xib */,
+				CD22302B14CA44EF0013011A /* BoKDetailViewController.xib */,
+				CD22301714CA44EF0013011A /* Supporting Files */,
+			);
+			path = BeautyOfKorea;
+			sourceTree = "<group>";
+		};
+		CD22301714CA44EF0013011A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD22301814CA44EF0013011A /* BeautyOfKorea-Info.plist */,
+				CD22301914CA44EF0013011A /* InfoPlist.strings */,
+				CD22301C14CA44EF0013011A /* main.m */,
+				CD22301E14CA44EF0013011A /* BeautyOfKorea-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD22300B14CA44EF0013011A /* BeautyOfKorea */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD22303014CA44EF0013011A /* Build configuration list for PBXNativeTarget "BeautyOfKorea" */;
+			buildPhases = (
+				CD22300814CA44EF0013011A /* Sources */,
+				CD22300914CA44EF0013011A /* Frameworks */,
+				CD22300A14CA44EF0013011A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BeautyOfKorea;
+			productName = BeautyOfKorea;
+			productReference = CD22300C14CA44EF0013011A /* BeautyOfKorea.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD22300314CA44EF0013011A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "http://www.cre8ive.kr";
+			};
+			buildConfigurationList = CD22300614CA44EF0013011A /* Build configuration list for PBXProject "BeautyOfKorea" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CD22300114CA44EF0013011A;
+			productRefGroup = CD22300D14CA44EF0013011A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD22300B14CA44EF0013011A /* BeautyOfKorea */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD22300A14CA44EF0013011A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD22301B14CA44EF0013011A /* InfoPlist.strings in Resources */,
+				CD22302A14CA44EF0013011A /* BoKMasterViewController.xib in Resources */,
+				CD22302D14CA44EF0013011A /* BoKDetailViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD22300814CA44EF0013011A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD22301D14CA44EF0013011A /* main.m in Sources */,
+				CD22302114CA44EF0013011A /* BoKAppDelegate.m in Sources */,
+				CD22302414CA44EF0013011A /* BoKMasterViewController.m in Sources */,
+				CD22302714CA44EF0013011A /* BoKDetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CD22301914CA44EF0013011A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD22301A14CA44EF0013011A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CD22302814CA44EF0013011A /* BoKMasterViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD22302914CA44EF0013011A /* en */,
+			);
+			name = BoKMasterViewController.xib;
+			sourceTree = "<group>";
+		};
+		CD22302B14CA44EF0013011A /* BoKDetailViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD22302C14CA44EF0013011A /* en */,
+			);
+			name = BoKDetailViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD22302E14CA44EF0013011A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CD22302F14CA44EF0013011A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD22303114CA44EF0013011A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BeautyOfKorea/BeautyOfKorea-Prefix.pch";
+				INFOPLIST_FILE = "BeautyOfKorea/BeautyOfKorea-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CD22303214CA44EF0013011A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BeautyOfKorea/BeautyOfKorea-Prefix.pch";
+				INFOPLIST_FILE = "BeautyOfKorea/BeautyOfKorea-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD22300614CA44EF0013011A /* Build configuration list for PBXProject "BeautyOfKorea" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD22302E14CA44EF0013011A /* Debug */,
+				CD22302F14CA44EF0013011A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD22303014CA44EF0013011A /* Build configuration list for PBXNativeTarget "BeautyOfKorea" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD22303114CA44EF0013011A /* Debug */,
+				CD22303214CA44EF0013011A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD22300314CA44EF0013011A /* Project object */;
+}
