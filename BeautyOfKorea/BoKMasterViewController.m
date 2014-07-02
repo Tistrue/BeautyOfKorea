@@ -7,12 +7,68 @@
 //
 
 #import "BoKMasterViewController.h"
-
 #import "BoKDetailViewController.h"
+#import "BoKMapViewController.h"
 
 @implementation BoKMasterViewController
-
+@synthesize btnMenu1;
+@synthesize btnMenu2;
+@synthesize btnMenu3;
+@synthesize btnMenu4;
+@synthesize btnMenu5;
+@synthesize btnMenu6;
+@synthesize ivBackground;
+@synthesize ivTitle;
 @synthesize detailViewController = _detailViewController;
+
+-(IBAction)btnMenu1Touched {
+    if (!self.detailViewController) {
+        self.detailViewController = [[[BoKDetailViewController alloc] initWithNibName:@"BoKDetailViewController" bundle:nil] autorelease];
+    }
+    self.detailViewController.currentMenu = 1;
+    [self.navigationController pushViewController:self.detailViewController animated:YES];
+}
+
+-(IBAction)btnMenu2Touched {
+    if (!self.detailViewController) {
+        self.detailViewController = [[[BoKDetailViewController alloc] initWithNibName:@"BoKDetailViewController" bundle:nil] autorelease];
+    }
+    self.detailViewController.currentMenu = 2;
+    [self.navigationController pushViewController:self.detailViewController animated:YES];
+}
+
+-(IBAction)btnMenu3Touched {
+    if (!self.detailViewController) {
+        self.detailViewController = [[[BoKDetailViewController alloc] initWithNibName:@"BoKDetailViewController" bundle:nil] autorelease];
+    }
+    self.detailViewController.currentMenu = 3;
+    [self.navigationController pushViewController:self.detailViewController animated:YES];
+}
+
+-(IBAction)btnMenu4Touched {
+    if (!self.detailViewController) {
+        self.detailViewController = [[[BoKDetailViewController alloc] initWithNibName:@"BoKDetailViewController" bundle:nil] autorelease];
+    }
+    self.detailViewController.currentMenu = 4;
+    [self.navigationController pushViewController:self.detailViewController animated:YES];
+}
+
+-(IBAction)btnMenu5Touched {
+    if (!self.detailViewController) {
+        self.detailViewController = [[[BoKDetailViewController alloc] initWithNibName:@"BoKDetailViewController" bundle:nil] autorelease];
+    }
+    self.detailViewController.currentMenu = 5;
+    [self.navigationController pushViewController:self.detailViewController animated:YES];
+}
+
+
+-(IBAction)btnMenu6Touched {
+    BoKMapViewController *mapViewController = 
+    [[BoKMapViewController alloc] initWithNibName:@"BoKMapViewController" bundle:nil];
+    [self.navigationController pushViewController:mapViewController animated:YES];
+    [mapViewController release];
+}
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -76,77 +132,6 @@
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
-// Customize the number of sections in the table view.
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-    return 1;
-}
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    return 1;
-}
-
-// Customize the appearance of table view cells.
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    static NSString *CellIdentifier = @"Cell";
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
-        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-    }
-
-    // Configure the cell.
-    cell.textLabel.text = NSLocalizedString(@"Detail", @"Detail");
-    return cell;
-}
-
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source.
-        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (!self.detailViewController) {
-        self.detailViewController = [[[BoKDetailViewController alloc] initWithNibName:@"BoKDetailViewController" bundle:nil] autorelease];
-    }
-    [self.navigationController pushViewController:self.detailViewController animated:YES];
-}
 
 @end

@@ -9,9 +9,22 @@
 #import <UIKit/UIKit.h>
 
 @interface BoKDetailViewController : UIViewController
+{
+    IBOutlet UIButton *btnBack;
+    IBOutlet UIButton *btnPhotos;
+    IBOutlet UIScrollView *svContent;
+    int currentMenu;
+}
 
-@property (strong, nonatomic) id detailItem;
+@property(nonatomic,retain) IBOutlet UIButton *btnBack;
+@property(nonatomic,retain) IBOutlet UIButton *btnPhotos;
+@property(nonatomic,retain) IBOutlet UIScrollView *svContent;
+@property(assign) int currentMenu;
 
-@property (strong, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+-(IBAction)btnBackTouched;
+-(IBAction)btnPhotosTouched;
+
+//@property (strong, nonatomic) id detailItem;
+//@property (strong, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
 
 @end

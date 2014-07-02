@@ -29,6 +29,7 @@
 
     BoKMasterViewController *masterViewController = [[[BoKMasterViewController alloc] initWithNibName:@"BoKMasterViewController" bundle:nil] autorelease];
     self.navigationController = [[[UINavigationController alloc] initWithRootViewController:masterViewController] autorelease];
+    self.navigationController.navigationBarHidden = YES;
     self.window.rootViewController = self.navigationController;
     [self.window makeKeyAndVisible];
     return YES;
